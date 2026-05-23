@@ -9,7 +9,14 @@ dependencies = [
     "rumps>=0.4.0",
 ]
 
+[tool.py2app]
+main-script = "main.py"
+packages = ["rumps"]
+plist = { CFBundleName = "Eyes Timer", CFBundleDisplayName = "Eyes Timer", CFBundleVersion = "1.0.0", LSUIElement = true }
+
 [dependency-groups]
 dev = [
+    "py2app>=0.28.10",
+    "pyinstaller>=6.20.0",
     "watchfiles>=1.2.0",
 ]
