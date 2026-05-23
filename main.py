@@ -1,5 +1,8 @@
+from app import EyesTimerApp
+
+
 def main():
-    print("Hello from eyes-timer!")
+    EyesTimerApp().run()
 
 
 if __name__ == "__main__":
